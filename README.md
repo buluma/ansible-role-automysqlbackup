@@ -1,6 +1,6 @@
 # Ansible Role: automysqlbackup
 
-[![Build Status](https://travis-ci.org/tschifftner/ansible-role-automysqlbackup.svg?branch=master)](https://travis-ci.org/tschifftner/ansible-role-automysqlbackup)
+[![Build Status](https://travis-ci.com/buluma/ansible-role-automysqlbackup.svg?branch=master)](https://travis-ci.com/buluma/ansible-role-automysqlbackup)
 
 Installs automysqlbackup on Debian/Ubuntu linux servers.
 
