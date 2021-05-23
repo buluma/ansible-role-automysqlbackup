@@ -2,9 +2,9 @@
 dependencies: []
 
 galaxy_info:
-  author: Tobias Schifftner
+  author: Michael Buluma
   description: Installs automysqlbackup on Debian/Ubuntu linux servers.
-  company: ambimax® GmbH
+  company: ShadowNet
   license: MIT
   role_name: automysqlbackup
   min_ansible_version: 2.5
