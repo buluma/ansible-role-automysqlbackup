@@ -2,9 +2,9 @@
 services: docker
 
 env:
- - distro: centos7
- - distro: centos6
- - distro: fedora27
+#  - distro: centos7
+#  - distro: centos6
+#  - distro: fedora27
 #  - distro: ubuntu1604
 #  - distro: ubuntu1404
 #  - distro: ubuntu1204
@@ -58,7 +58,3 @@ after_failure:
   - ${DOCKER} ls -la /var/log/automysqlbackup/
   - ${DOCKER} cat /var/log/automysqlbackup/*.log
   - ${DOCKER} /usr/local/bin/automysqlbackup
-
-notifications:
-  slack: ambimax:2MlPTX9bY9aPxCPhJGxHKIT6
-  webhooks: https://galaxy.ansible.com/api/v1/notifications/
