@@ -2,16 +2,16 @@
 services: docker
 
 env:
- - distro: centos7
- - distro: centos6
- - distro: fedora27
- - distro: ubuntu1604
+#  - distro: centos7
+#  - distro: centos6
+#  - distro: fedora27
+#  - distro: ubuntu1604
 #  - distro: ubuntu1404
 #  - distro: ubuntu1204
 
- - distro: debian9
-#  - distro: debian8
- - distro: ubuntu1804
+#  - distro: debian9
+ - distro: debian8
+#  - distro: ubuntu1804
 
 script:
   # Configure test script so we can run extra tests after playbook is run.
@@ -20,7 +20,7 @@ script:
   - export DOCKER="docker exec --tty ${container_id} env TERM=xterm"
 
   # Download test shim.
-  - wget -O ${PWD}/tests/test.sh https://gist.githubusercontent.com/tschifftner/4078cf2a8429d967d5e100649ff2caa9/raw/
+  - wget -O ${PWD}/tests/test.sh https://gist.githubusercontent.com/buluma/222d4b8a425069e77287aecb12b56506/raw/
   - chmod +x ${PWD}/tests/test.sh
 
   # Run tests.
